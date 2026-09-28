@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Vogelgesang Family</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@600&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #faf7f2;
+      --card: #ffffff;
+      --text: #2b2622;
+      --muted: #6f655c;
+      --accent: #c0643a;
+      --border: #ece4d9;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #1c1917;
+        --card: #26221f;
+        --text: #f3ede6;
+        --muted: #b3a89c;
+        --accent: #e58a5f;
+        --border: #3a332e;
+      }
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: "Inter", system-ui, sans-serif;
+      background: var(--bg);
+      color: var(--text);
+      line-height: 1.6;
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+    header { padding: 80px 0 48px; text-align: center; }
+    h1, h2, h3 { font-family: "Fraunces", Georgia, serif; font-weight: 600; }
+    h1 { font-size: clamp(2.2rem, 6vw, 3.6rem); line-height: 1.1; }
+    header p { color: var(--muted); margin-top: 12px; font-size: 1.1rem; }
+    section { padding: 40px 0; }
+    h2 { font-size: 1.8rem; margin-bottom: 20px; }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 16px;
+    }
+    .card {
+      background: var(--card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 24px;
+    }
+    .avatar {
+      width: 64px; height: 64px; border-radius: 50%;
+      background: var(--accent); color: #fff;
+      display: grid; place-items: center;
+      font-family: "Fraunces", serif; font-size: 1.6rem;
+      margin-bottom: 14px;
+    }
+    .card h3 { font-size: 1.2rem; }
+    .card p { color: var(--muted); font-size: 0.95rem; }
+    ul.timeline { list-style: none; border-left: 2px solid var(--border); padding-left: 20px; }
+    ul.timeline li { margin-bottom: 18px; }
+    ul.timeline strong { color: var(--accent); display: block; }
+    footer { text-align: center; color: var(--muted); padding: 48px 0; font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>The Vogelgesang Family</h1>
+      <p>A little corner of the internet for the people we love.</p>
+    </header>
+
+    <section>
+      <h2>Meet the Family</h2>
+      <div class="grid">
+        <div class="card"><div class="avatar">K</div><h3>K.</h3><p>Parent, planner, website builder.</p></div>
+        <div class="card"><div class="avatar">?</div><h3>Family Member</h3><p>Add a short bio here.</p></div>
+        <div class="card"><div class="avatar">?</div><h3>Family Member</h3><p>Add a short bio here.</p></div>
+        <div class="card"><div class="avatar">🐾</div><h3>The Pet</h3><p>Chief morale officer.</p></div>
+      </div>
+    </section>
+
+    <section>
+      <h2>Family Moments</h2>
+      <ul class="timeline">
+        <li><strong>2026</strong>Launched the family website.</li>
+        <li><strong>Coming soon</strong>Vacations, milestones, and favorite memories.</li>
+      </ul>
+    </section>
+
+    <footer>&copy; 2026 The Vogelgesang Family</footer>
+  </div>
+</body>
+</html>
